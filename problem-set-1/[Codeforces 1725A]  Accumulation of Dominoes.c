@@ -1,8 +1,7 @@
 /*
 *** Accumulation of Dominoes 
-*** Codeforces Problem 
+*** Codeforces Problem 1725A
 */
-
 
 #include <stdio.h>
 int main () 
