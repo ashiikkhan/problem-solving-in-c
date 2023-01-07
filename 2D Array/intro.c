@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main ()
 {
-    int row=4, col=3;
+    int row=2, col=3;
     int matrix[row][col];
 
     for(int i=0; i<row; i++)
