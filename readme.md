@@ -6,3 +6,6 @@
 
 
 [Problem set 14.5](https://drive.google.com/file/d/1Z6wiKAJHi9Z8Zv0PM0hUkyPolAPfA5Uo/view), given in module 14.5
+
+
+[Course 2 Mid Term Exam](https://docs.google.com/document/d/1AVis2gj-sOmHKuFVrMxAZX0flPPXkzub/edit), Module 15
