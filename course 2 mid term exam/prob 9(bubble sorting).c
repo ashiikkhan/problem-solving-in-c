@@ -10,7 +10,6 @@ the sequence of these integers if we run Bubble sort for only 5 iterations:
 */
 
 #include<stdio.h>
-
 int main ()
 {
     int arr[]= {12, 7, 9, 1, 3, 73, 11, 15, 62, 19, 4};
@@ -33,7 +32,5 @@ int main ()
     {
         printf("%d ", arr[i]);
     }
-
-
     return 0;
 }
