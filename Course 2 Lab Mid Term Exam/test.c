@@ -1,19 +1,34 @@
 #include <stdio.h>
+#include <string.h>
+
+#define MAX_LEN 20
+
+int is_palindrome(char *s, int len) {
+    int i;
+    for (i = 0; i < len / 2; i++) {
+        if (s[i] != s[len - i - 1]) {
+            return 0;
+        }
+    }
+    return 1;
+}
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
-            if (j == 1) {
-                printf("%d", i);
-            } else if (i == j) {
-                printf("%d", n);
-            } else {
-                printf(" ");
-            }
+    int T;
+    scanf("%d", &T);
+    int t;
+    char s[MAX_LEN + 1];
+    for (t = 1; t <= T; t++) {
+        scanf("%s", s);
+        int len = strlen(s);
+        printf("Case #");
+        if (!is_palindrome(s, len)) {
+            printf("1: Not Palindrome\n");
+        } else if (len > 7) {
+            printf("2: %c%d%c\n", s[0], len - 2, s[len - 1]);
+        } else {
+            printf("3: %s\n", s);
         }
-        printf("\n");
     }
     return 0;
 }
