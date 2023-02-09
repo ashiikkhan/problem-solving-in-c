@@ -1,4 +1,5 @@
 /**
+ * codeforces 1709/A
  * Problem link: https://codeforces.com/problemset/problem/1709/A
  * 
  * hidden_keys[k]!=0 that means if the key you have in your hand open the lock it can and then not find 0 that means you have got another key and take the key and check again by opening another lock with the key if you not get 0 that means you get another key which is the last key and one more door will remain locked and that lock must be opened with that key....
