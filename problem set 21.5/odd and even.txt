@@ -1,0 +1,17 @@
+Here are some important things to know about odd and even numbers in programming:
+
+1.Sum of two even numbers is always even: If we add two even numbers, the result will always be even. For example, 2 + 4 = 6, where both 2 and 4 are even and 6 is also even.
+
+2.Sum of two odd numbers is always even: If we add two odd numbers, the result will always be even. For example, 3 + 5 = 8, where both 3 and 5 are odd and 8 is even.
+
+3.Sum of an odd and an even number is always odd: If we add an odd and an even number, the result will always be odd. For example, 3 + 4 = 7, where 3 is odd and 4 is even and 7 is odd.
+
+4.Product of two even numbers is always even: If we multiply two even numbers, the result will always be even. For example, 2 x 4 = 8, where both 2 and 4 are even and 8 is also even.
+
+5.Product of two odd numbers is always odd: If we multiply two odd numbers, the result will always be odd. For example, 3 x 5 = 15, where both 3 and 5 are odd and 15 is also odd.
+
+6.Product of an odd and an even number is always even: If we multiply an odd and an even number, the result will always be even. For example, 3 x 4 = 12, where 3 is odd and 4 is even and 12 is even.
+
+7.Dividing an even number by 2 will result in an integer: If we divide an even number by 2, the result will always be an integer. For example, 10 / 2 = 5, where 10 is even and 5 is an integer.
+
+These properties of odd and even numbers can be useful in solving mathematical problems and optimizing algorithms in computer programming.
