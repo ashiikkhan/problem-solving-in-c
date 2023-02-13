@@ -1,38 +1,127 @@
-#include<stdio.h>
-#include<string.h>
-void custom_strcat(char dest[], char src[])
+#include <stdio.h>
+#include <string.h>
+int main()
 {
-    int dest_len=strlen(dest);
-    int i;
-    for(i=0; src[i]!='\0'; i++)
+    int n = 8;
+    int chessboard[n + 1][n + 1];
+    // initialize with 0;
+    for (int i = 1; i <= n; i++)
     {
-        dest[dest_len+i]=src[i];
+        for (int j = 1; j <= n; j++)
+        {
+            chessboard[i][j] = 0;
+        }
     }
-    dest[dest_len+i]='\0';
-}
-int main () 
-{
-    int m; 
-    scanf("%d", &m);
-    char dest_string[1000]="";
-    for(int i=1; i<=m; i++)
+
+    // replace 0 with 1 where rooks are present;
+    int rooks, x, y;
+    printf("num of rooks: \n");
+    scanf("%d", &rooks);
+
+    for (int i = 1; i <= rooks; i++)
     {
-        char src_string[20];
-        scanf("%s", src_string);
-        custom_strcat(dest_string, src_string);
-        custom_strcat(dest_string, " ");
+        scanf("%d %d", &x, &y);
+        chessboard[x][y] = 1;
     }
-    printf("%s", dest_string);
+
+    for (int i = 1; i <= n; i++)
+    {
+        int row_rooks = 0;
+        for (int j = 1; j <= n; j++)
+        {
+            if (chessboard[i][j] == 1)
+            {
+                row_rooks++;
+            }
+        }
+        int vanish_count = 0;
+        if (row_rooks > 1)
+        {
+            for (int j = 1; j <= n; j++)
+            {
+
+                if (row_rooks % 2 != 0)
+                {
+                    if (vanish_count == row_rooks-1)
+                        continue;
+
+                    if (chessboard[i][j] == 1)
+                    {
+                        chessboard[i][j] = 0;
+                        vanish_count++;
+                    }
+                }
+                else
+                    chessboard[i][j]=0;
+            }
+        }
+    }
+
+    // column rooks:
+    for (int i = 1; i <= n; i++)
+    {
+        int col_rooks = 0;
+        for (int j = 1; j <= n; j++)
+        {
+            if (chessboard[j][i] == 1)
+            {
+                col_rooks++;
+            }
+        }
+        int vanish_count = 0;
+        if (col_rooks > 1)
+        {
+
+            for (int j = 1; j <= n; j++)
+            {
+
+                if (col_rooks % 2 != 0)
+                {
+                    if (vanish_count == col_rooks - 1)
+                        continue;
+                    if (chessboard[j][i] == 1)
+                    {
+                        chessboard[j][i] = 0;
+                        vanish_count++;
+                    }
+                }
+                else
+                    chessboard[j][i] = 0;
+            }
+        }
+    }
+
+    int safe_rooks=0;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if(chessboard[i][j]==1)
+            {
+                safe_rooks++;
+            }
+        }
+    }
+    printf("Safe rooks- %d \n", safe_rooks);
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if(chessboard[i][j]==1)
+            {
+                printf("%d %d\n", i, j);
+            }
+        }
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            printf("%d ", chessboard[i][j]);
+        }
+        printf("\n");
+    }
+
     return 0;
 }
-
-/**
- * we can also do the solution with strcat function :
- * The basic mechanism of strcat function is as follows:
-
-It takes two parameters: a destination string and a source string.
-
-It starts at the end of the destination string (the null character) and copies characters from the source string to the destination string, until it reaches the null character of the source string.
-
-The final result is a concatenated string in the destination string.
-*/
