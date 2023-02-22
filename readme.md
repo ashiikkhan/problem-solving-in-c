@@ -13,3 +13,5 @@
 [Problem set 22.5](https://drive.google.com/file/d/1oCOIweibvo-450LQbGWBs6VU1lzjQ7Jb/view), Module 22.5 Function related.
 
 [Problem set 25.5](https://drive.google.com/file/d/1xjmqAbAIj94LPhnGGPpzk9d4MiQvqDCG/view), Module 25.5.
+
+[Problem set 26.5](https://drive.google.com/file/d/1-egznfRkw2oh87sFQWulno1R3J80qsDC/view), Module 26.5.

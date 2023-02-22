@@ -23,19 +23,19 @@ int find_kth_number(int k) {
 int main () 
 {
     int t;
-    // printf("Enter the number of test cases: ");
+    printf("Enter the number of test cases: ");
     scanf("%d", &t);
 
     int result_array[t];
 
     for (int i = 0; i < t; i++) {
         int k;
-        // printf("Enter the value of k for test case %d: ", i+1);
+        printf("Enter the value of k for test case %d: ", i+1);
         scanf("%d", &k);
         result_array[i] = find_kth_number(k);
     }
     
-    // printf("The k-th valid numbers are: ");
+    printf("The k-th valid numbers are: ");
     for (int i = 0; i < t; i++) {
         printf("%d ", result_array[i]);
     }
