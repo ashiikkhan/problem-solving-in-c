@@ -15,3 +15,5 @@
 [Problem set 25.5](https://drive.google.com/file/d/1xjmqAbAIj94LPhnGGPpzk9d4MiQvqDCG/view), Module 25.5.
 
 [Problem set 26.5](https://drive.google.com/file/d/1-egznfRkw2oh87sFQWulno1R3J80qsDC/view), Module 26.5.
+
+[Course 2 Lab Assignment 2](https://docs.google.com/document/d/16-EcFdBmF5O5n3tqYs6yxJC6b6-0ZETIwiJneHie8ug/edit), Module 27.
