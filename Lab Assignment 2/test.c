@@ -1,19 +1,30 @@
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main() {
-//     int sum = 0;
-//     int i;
+void print_consecutive_evens(int N) {
+    int n1 = N/4;
+    if(n1%2==0)
+    {
+        n1-=4;
+        printf("%d %d %d %d\n", n1, n1+2, n1+4, n1+6);
+    }
+    else {
+        n1-=3;
+        printf("%d %d %d %d\n", n1, n1+2, n1+4, n1+6);
+    }
+}
 
-//     for (i = 1; i <= 20; i++) {
-//         if (i % 3 == 1) { // add every third number
-//             sum += i;
-//         } else if (i % 3 == 2) { // subtract every third number
-//             sum -= i;
-//         }
-//     }
 
-//     printf("The sum of the series is: %d\n", sum);
 
-//     return 0;
-// }
-//wront
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    for (int i = 0; i < T; i++) {
+        int N;
+        scanf("%d", &N);
+
+        print_consecutive_evens(N);
+    }
+
+    return 0;
+}
